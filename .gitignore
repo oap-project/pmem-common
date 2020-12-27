@@ -1,11 +1,6 @@
-**/target/**
-*.class
-*.iml
-*.sh
+dependency-reduced-pom.xml
+src/resources
+target
 
-# logs
-*.log
-
-# IDEA config files
-.idea/
-*.iml
+**/*.idea
+**/*.iml
