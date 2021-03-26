@@ -157,7 +157,7 @@ JNIEXPORT void JNICALL Java_com_intel_oap_common_unsafe_PersistentMemoryPlatform
 
   while (sz >= BYTES_PER_CLFLUSH) {
     memcpy(dest, src, BYTES_PER_CLFLUSH);
-    _mm_clflush(dest);
+    _mm_clflushopt(dest);
     dest += BYTES_PER_CLFLUSH;
     src += BYTES_PER_CLFLUSH;
     sz -= BYTES_PER_CLFLUSH;
