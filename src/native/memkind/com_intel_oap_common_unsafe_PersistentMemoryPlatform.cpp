@@ -22,7 +22,7 @@
 #include <cstdlib>
 #include <cassert>
 #include <stdexcept>
-#include <emmintrin.h>
+#include <x86intrin.h>
 #include "com_intel_oap_common_unsafe_PersistentMemoryPlatform.h"
 
 using memkind = struct memkind;

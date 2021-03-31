@@ -25,7 +25,7 @@ FIND_PACKAGE(JNI REQUIRED)
 
 INCLUDE_DIRECTORIES(${JNI_INCLUDE_DIRS})
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -mclflushopt")
 
 SET(SOURCE_FILES com_intel_oap_common_unsafe_PersistentMemoryPlatform.cpp)
 
