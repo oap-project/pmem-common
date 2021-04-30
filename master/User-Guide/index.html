@@ -51,6 +51,12 @@
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">User Guide</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#memkind-installation">memkind installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vmemcache-installation">vmemcache installation</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#building">Building</a>
     </li>
@@ -113,8 +119,31 @@
 <p><a href="https://github.com/pmem/vmemcache">Vmemcache</a></p>
 </li>
 </ul>
+<h3 id="memkind-installation">memkind installation</h3>
+<p>The memkind library depends on <code>libnuma</code> at the runtime, so it must already exist in the worker node system. Build the latest memkind lib from source:</p>
+<pre><code>git clone -b v1.10.1 https://github.com/memkind/memkind
+cd memkind
+./autogen.sh
+./configure
+make
+make install
+</code></pre>
+
+<h3 id="vmemcache-installation">vmemcache installation</h3>
+<p>To build vmemcache library from source, you can (for RPM-based linux as example):</p>
+<pre><code>git clone https://github.com/pmem/vmemcache
+cd vmemcache
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCPACK_GENERATOR=rpm
+make package
+sudo rpm -i libvmemcache*.rpm
+</code></pre>
+
 <h2 id="building">Building</h2>
-<pre><code>mvn clean package -Ppersistent-memory,vmemcache
+<pre><code>git clone -b &lt;tag-version&gt; https://github.com/oap-project/pmem-common.git
+cd pmem-common
+mvn clean package -Ppersistent-memory,vmemcache
 </code></pre>
               
             </div>
