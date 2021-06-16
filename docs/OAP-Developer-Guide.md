@@ -4,12 +4,12 @@ This document contains the instructions & scripts on installing necessary depend
 You can get more detailed information from OAP each module below.
 
 * [SQL Index and Data Source Cache](https://github.com/oap-project/sql-ds-cache/blob/v1.1.1-spark-3.1.1/docs/Developer-Guide.md)
-* [PMem Common](https://github.com/oap-project/pmem-common/tree/v1.1.1-spark-3.1.1)
-* [PMem Spill](https://github.com/oap-project/pmem-spill/tree/v1.1.1-spark-3.1.1)
-* [PMem Shuffle](https://github.com/oap-project/pmem-shuffle/tree/v1.1.1-spark-3.1.1#5-install-dependencies-for-pmem-shuffle)
-* [Remote Shuffle](https://github.com/oap-project/remote-shuffle/tree/v1.1.1-spark-3.1.1)
-* [OAP MLlib](https://github.com/oap-project/oap-mllib/tree/v1.1.1-spark-3.1.1)
-* [Native SQL Engine](https://github.com/oap-project/native-sql-engine/tree/v1.1.1-spark-3.1.1)
+* [PMem Common](https://github.com/oap-project/pmem-common/tree/v1.2.0-spark-3.1.1)
+* [PMem Spill](https://github.com/oap-project/pmem-spill/tree/v1.2.0-spark-3.1.1)
+* [PMem Shuffle](https://github.com/oap-project/pmem-shuffle/tree/v1.2.0-spark-3.1.1#5-install-dependencies-for-pmem-shuffle)
+* [Remote Shuffle](https://github.com/oap-project/remote-shuffle/tree/v1.2.0-spark-3.1.1)
+* [OAP MLlib](https://github.com/oap-project/oap-mllib/tree/v1.2.0-spark-3.1.1)
+* [Native SQL Engine](https://github.com/oap-project/native-sql-engine/tree/v1.2.0-spark-3.1.1)
 
 ## Building OAP
 
